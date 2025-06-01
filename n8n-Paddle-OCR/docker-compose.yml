@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  paddleocr:
+    image: paddlepaddle/paddleocr:latest
+    container_name: paddleocr
+    ports:
+      - "8866:8866"
+    command: ["paddleocr_server"]
